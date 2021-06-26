@@ -19,7 +19,31 @@
 }
 .div4 {
   grid-area: 2 / 1 / 3 / 4;
-  width: 10%;
+}
+@media only screen and (max-width: 500px) {
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+  .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .div2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .div3 {
+    grid-area: 2 / 1 / 3 / 3;
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .div4 {
+    grid-area: 3 / 1 / 4 / 3;
+  }
 }
 
 .dropdown {
@@ -32,4 +56,16 @@
 }
 .dropdown:focus {
   outline: none;
+}
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link {
+  font-size: 2rem;
+  margin: 2rem;
+  cursor: pointer;
+  border-bottom: 1px solid white;
 }

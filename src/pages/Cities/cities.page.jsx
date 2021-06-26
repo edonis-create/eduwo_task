@@ -7,7 +7,6 @@ const Content = () => (
   <div className="content">
     <Form />
     <CitiesTable />
-    PAGINATION
   </div>
 );
 
