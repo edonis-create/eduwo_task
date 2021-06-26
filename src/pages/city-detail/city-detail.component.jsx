@@ -27,7 +27,6 @@ const CityDetail = () => {
       setCityImage(res.data.results[0]?.urls.regular);
     })();
   }, []);
-  console.log(cityData);
   return (
     <div className="city-detail">
       {cityImage ? (
@@ -35,36 +34,41 @@ const CityDetail = () => {
       ) : (
         <div className="image-alternative" />
       )}
-
-      <div className="table-data">
-        <h2 className="title">{cityname}</h2>
-        <table style={{ width: "100%" }}>
-          <tr>
-            <th>Country</th>
-            <td>{cityData.data.country}</td>
-          </tr>
-          <tr>
-            <th>Latitude</th>
-            <td>{cityData.data.latitude}</td>
-          </tr>
-          <tr>
-            <th>Longitude</th>
-            <td>{cityData.data.longitude}</td>
-          </tr>
-          <tr>
-            <th>Region</th>
-            <td>{cityData.data.region}</td>
-          </tr>
-          <tr>
-            <th>Populaion</th>
-            <td>{cityData.data.population}</td>
-          </tr>
-          <tr>
-            <th>Time Zone</th>
-            <td>{cityData.data.timezone}</td>
-          </tr>
-        </table>
-      </div>
+      {cityData ? (
+        <div className="table-data">
+          <h2 className="title">{cityname}</h2>
+          <table style={{ width: "100%" }}>
+            <tbody>
+              <tr>
+                <th>Country</th>
+                <td>{cityData.data.country}</td>
+              </tr>
+              <tr>
+                <th>Latitude</th>
+                <td>{cityData.data.latitude}</td>
+              </tr>
+              <tr>
+                <th>Longitude</th>
+                <td>{cityData.data.longitude}</td>
+              </tr>
+              <tr>
+                <th>Region</th>
+                <td>{cityData.data.region}</td>
+              </tr>
+              <tr>
+                <th>Populaion</th>
+                <td>{cityData.data.population}</td>
+              </tr>
+              <tr>
+                <th>Time Zone</th>
+                <td>{cityData.data.timezone}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <span>Waiting...</span>
+      )}
     </div>
   );
 };
