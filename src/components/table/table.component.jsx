@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import { SearchName } from "../../redux/unsplash/unsplash.actions";
 
 import "./table.styles.css";
 
@@ -22,7 +23,12 @@ const CitiesTable = ({ cities }) => {
               return (
                 <tr key={index}>
                   <td>
-                    <Link to={`/city/${city.wikiDataId}`}>{city.name}</Link>
+                    <Link
+                      onClick={() => SearchName(city.name)}
+                      to={`/city/${city.name}/${city.wikiDataId}`}
+                    >
+                      {city.name}
+                    </Link>
                   </td>
                   <td>{city.country}</td>
                   <td>{city.population}</td>
@@ -42,4 +48,4 @@ const mapStateToProps = (state) => ({
   cities: state.GeodbData.res,
 });
 
-export default connect(mapStateToProps)(CitiesTable);
+export default connect(mapStateToProps, { SearchName })(CitiesTable);
