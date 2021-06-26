@@ -1,0 +1,23 @@
+.header-container {
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #0a50aa, #1888d5);
+  border-bottom: var(--border);
+}
+.logo {
+  margin-left: 2rem;
+}
+.profile {
+  margin-right: 10rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  color: var(--text-color);
+}
+.profile:hover {
+  cursor: pointer;
+}

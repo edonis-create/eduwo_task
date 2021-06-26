@@ -1,0 +1,22 @@
+.profile-image {
+  background: url(../../assets/person.jpg);
+  min-width: 60%;
+  height: 40%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+}
+.profile-title {
+  margin-top: -1rem;
+  width: 60%;
+  font-size: 1.95rem;
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+}
+.profile-description {
+  width: 60%;
+  font-size: 1.5rem;
+  color: var(--main-color);
+  text-align: center;
+}
