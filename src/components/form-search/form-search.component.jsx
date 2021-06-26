@@ -24,6 +24,7 @@ const Form = ({ Response }) => {
       },
     });
     Response(response.data);
+    console.log(response.data);
   }, [offset]);
   //When submiting form to make request to geodb API
   const onHandleSubmit = async (e) => {

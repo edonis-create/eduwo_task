@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import { ShowProfile, HideProfile } from "../../redux/profile/profile.actions";
 import { ReactComponent as Logo } from "../../assets/eduwo-logo.svg";
 import Profile from "../profile/profile.component";
@@ -12,7 +13,9 @@ const Header = ({ ShowProfile, HideProfile, showProfile }) => {
 
   return (
     <div className="header-container">
-      <Logo className="logo" />
+      <Link to="/">
+        <Logo className="logo" />
+      </Link>
       <div
         onMouseLeave={onHandleMouseLeave}
         onMouseEnter={onHandleMouseEnter}

@@ -14,8 +14,10 @@ th {
   color: var(--text-color);
   font-size: 2rem;
 }
-td {
+td,
+a {
   color: var(--text-color);
+  text-decoration: none;
 }
 span {
   font-size: 4rem;

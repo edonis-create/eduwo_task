@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 import "./table.styles.css";
@@ -20,7 +21,9 @@ const CitiesTable = ({ cities }) => {
             {cities.data.map((city, index) => {
               return (
                 <tr key={index}>
-                  <td>{city.name}</td>
+                  <td>
+                    <Link to={`/city/${city.wikiDataId}`}>{city.name}</Link>
+                  </td>
                   <td>{city.country}</td>
                   <td>{city.population}</td>
                   <td>{city.region}</td>
