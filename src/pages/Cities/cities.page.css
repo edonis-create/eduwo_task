@@ -1,5 +1,6 @@
 .content {
   width: 100%;
   padding: 3rem;
-  background-color: red;
+  display: flex;
+  flex-direction: column;
 }

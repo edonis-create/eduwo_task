@@ -1,9 +1,7 @@
 .form {
   width: 100%;
-  background-color: blue;
   display: grid;
   justify-content: center;
-
   align-content: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 0.5fr);
@@ -22,4 +20,16 @@
 .div4 {
   grid-area: 2 / 1 / 3 / 4;
   width: 10%;
+}
+
+.dropdown {
+  background-color: var(--content-bg);
+  padding: 1rem;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  border-radius: 0.5rem;
+}
+.dropdown:focus {
+  outline: none;
 }

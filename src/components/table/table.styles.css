@@ -1,0 +1,24 @@
+th,
+td {
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--content-bg);
+}
+.table-container {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+th {
+  color: var(--text-color);
+  font-size: 2rem;
+}
+td {
+  color: var(--text-color);
+}
+span {
+  font-size: 4rem;
+  color: var(--text-color);
+  margin-top: 2rem;
+}
