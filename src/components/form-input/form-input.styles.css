@@ -1,0 +1,11 @@
+.form-input {
+  background-color: var(--content-bg);
+  padding: 1rem;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  border-radius: 0.5rem;
+}
+.form-input:focus {
+  outline: none;
+}

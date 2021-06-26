@@ -13,6 +13,7 @@
   /* Creating color variables */
   --main-color: #0a50aa;
   --secondary-color: #1888d5‌;
+  --content-bg: #202020;
   --text-color: #eee;
   --border: 1px solid #eee;
 }

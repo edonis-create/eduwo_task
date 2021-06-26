@@ -1,1 +1,7 @@
-/* Setting margin, padding for each elemnt  to 0 */
+.container {
+  min-width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #0a50aa, #1888d5);
+  display: flex;
+  flex-direction: column;
+}
